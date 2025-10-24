@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <div class="span3">
+    <h2>Registrar un Producto</h2>
+    <form action="<%= producto ? ('/productos/' + producto.id) : '/producto' %>" method="post">
+    <label>Nombre</label>
+    <input type="text" name="nombre" class="span3" required autofocus>
+    <label>Precio</label>
+    <input type="number" name="precio" class="span3" required>
+    <label>Descripción</label>
+    <input type="text" name="descripcion" class="span3" required>
+    <label>Url de la Imagen</label>
+    <input type="text" name="imagen" class="span3" required>
+    <label>Marca</label>
+    <input type="text" name="marca" class="span3" required>
+    <input type="submit" value="Registrar" class="btn btn-primary pull-right">
+    <div class="clearfix"></div>
+    </form>
+</div>
+</body>
+</html>
