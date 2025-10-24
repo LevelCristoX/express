@@ -12,7 +12,7 @@
 <body>
     <div class="span3">
     <h2>Registrar un Producto</h2>
-    <form action="<%= producto ? ('/productos/' + producto.id) : '/producto' %>" method="post">
+    <form action="<%= producto ? ('/productos/' + productos.id) : '/productos' %>" method="post">
     <label>Nombre</label>
     <input type="text" name="nombre" class="span3" required autofocus>
     <label>Precio</label>
